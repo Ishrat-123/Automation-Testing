@@ -10,6 +10,10 @@ public class ImageClick {
 
 	public static void main(String[] args) {
 		
+		String pcLocation = System.getProperty("user.dir");
+		
+		System.setProperty("webdriver.gecko.driver", pcLocation + "\\Drivers\\geckodriver.exe");
+		
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
 		
